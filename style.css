@@ -2,7 +2,7 @@
 
 .global {
     width: 700px;
-    background-color: aquamarine;
+    background-color: rgb(122, 122, 122);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +12,7 @@
 header {
     height: 300px;
     border: 4px double black;
-    background: rgb(234, 56, 240) url(res/bg.jpg);
+    background: rgba(0, 255, 0, 0.726) url(res/bg.jpg);
     text-align: center;
     display: block;
     margin: auto;
@@ -21,21 +21,177 @@ header {
 div.menu {
     height: 300px;
     border: 4px double black;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(197, 197, 197);
+    text-align: center;
 }
 
 footer {
-    height: 300px;
+    /* height: 250px; */
     border: 4px double black;
-    background-color: rgb(189, 255, 82);
+    background-color: rgb(248, 117, 231);
+    padding: 40px 0 40px 0;
 }
 
 .ava {
-    width: 150px;
-    height: 150px;
+    padding: 40px 0px 20px 0px;
+}
 
+div img {
+    width: 140px;
+    height: 140px;
+    border-radius: 90px;
 }
 
 header h1 {
     color: white;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+header h2 {
+    color: white;
+    margin: auto;
+}
+
+ul {
+    margin: auto;
+    padding: 0;
+    padding-top: 20px;
+}
+
+div.menu li {
+    list-style-type: none;
+    border: 4px double black;
+    background-color: rgb(160, 209, 255);
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    /* height: 30px; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Спизженный слайдер на HTML+CSS */
+
+.adaptivny-slayder {
+    position: relative;
+    max-width: 680px;
+    margin: 50px auto;
+  }
+  
+  .adaptivny-slayder input[name="kadoves"] {
+    display: none;
+  }
+  
+  .kadoves {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .kadoves label {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    margin: 0 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: 5px solid #2f363c;
+    background-color: #738290;
+  }
+  
+  #slaid1:checked~.kadoves label[for="slaid1"] {
+    background-color: white;
+  }
+  
+  #slaid2:checked~.kadoves label[for="slaid2"] {
+    background-color: white;
+  }
+  
+  #slaid3:checked~.kadoves label[for="slaid3"] {
+    background-color: white;
+  }
+  
+  .adaptivny-slayder-lasekun {
+    overflow: hidden;
+     
+  }
+  
+  .abusteku-deagulus {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .abusteku-deagulus img {
+    width: 100%;
+    flex-shrink:0;
+  }
+  
+  #slaid1:checked~adaptivny-slayder-lasekun abusteku-deagulus {
+    transform: translate(0);
+  }
+  
+  #slaid2:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-100%);
+  }
+  
+  #slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-200%);
+  }
+
+  div.abusteku-deagulus img {
+    height: 750px;
+  }
+
+/* Спизженный слайдер на HTML+CSS */
+
+
+footer h2 {
+    color: white;
+    font-size: 20px;
+}
+
+
+footer li {
+    list-style-type: none;
+    border: 4px double black;
+    background-color: rgb(160, 209, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    display:inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+li.fb {
+    background-image: url(res/fb.png);
+    background-size: cover;
+}
+
+li.vk {
+    background-image: url(res/vk.png);
+    background-size: cover;
+}
+
+li.in {
+    background-image: url(res/in.png);
+    background-size: cover;
+}
+
+li.tg {
+    background-image: url(res/tg.png);
+    background-size: cover;
+}
+
+li.yt {
+    background-image: url(res/yt.png);
+    background-size: cover;
 }
